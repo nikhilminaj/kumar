@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="icon" sizes="16*16" type="image/png" href="favicon-16x16.png">
+    <title>Login Page</title>
+</head>
+<body>
+    <section class="head">
+        <nav>
+            <a href="main.html"><img src="logo.png" width="14%"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="main.html"> HOME </a></li>
+                    <li><a href="About.html"> ABOUT </a></li>
+                    <li><a href="games.html"> GAMES </a></li>
+                    <li><a href="Contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-shower" onclick="showMenu()"></i>
+        </nav>
+    <center>
+        <h1>Login Here</h1>
+        <p>If you have an account here already, NO need to go again on Registration Page. Login Here.</p>
+        <form action="Login">
+            <fieldset style="width: 50%;">
+                <label for="Username">UserName: <input type="text"></label><br><br>
+                <label for="Password">Password: <input type="password"></label><br><br>
+                <button>Login</button>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

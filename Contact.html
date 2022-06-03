@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="icon" sizes="16*16" type="image/png" href="favicon-16x16.png">
+    <title>Registration Form</title>
+    <style>
+        form.solid{
+            border-style: solid;
+            border-radius: 5px;
+            border-color: red;
+            border-left-color: white;
+            border-right-color: white;
+            border-spacing: 500px;
+        }
+    </style>
+</head>
+<body>
+    <section class="head">
+        <nav>
+            <a href="main.html"><img src="logo.png" width="14%"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="main.html"> HOME </a></li>
+                    <li><a href="About.html"> ABOUT </a></li>
+                    <li><a href="games.html"> GAMES </a></li>
+                    <li><a href="Contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-shower" onclick="showMenu()"></i>
+        </nav>
+    <center>
+        <h1>Registration Form</h1>
+        <p> <b>If you have any Reviews or any Suggestion for this website. Please Write anything you want to write in the Message Box. It will help me for making more accurate website next time. </b> </p>
+        <form action="Submit" class = "solid"><br>
+                <label for="Name"><b>First Name: </b> <input type="text"></label><br><br>
+                <label for="Name"><b>Last Name: </b> <input type="text"></label><br><br>
+                <label for="Email"><b>Email: </b> &ensp;&ensp;<input type="text"></label><br><br>
+                <label for="Gender"><b>Gender: </b></label>
+                <input type="radio" name = "Gender" value = "Male"><b>Male</b>
+                <input type="radio" name = "Gender" value = "Female"><b>Female</b>
+                <input type="radio" name = "Gender" value = "Others"><b>Others</b>
+                <br><br>
+                <label for="DOB"><b>DOB: </b>&ensp;&ensp;<input type="date"></label><br><br>
+                <label><b>Nationality: </b> </label>
+                <select name="Nationality">
+                <option>India</option>
+                <option>Nepal</option>
+                <option>Pakistan</option>
+                <option>China</option>
+                <option>Russia</option>
+                <option>American</option>
+                </select><br><br>
+                <label> <b>Message Box: </b></label>
+                <textarea  rows="10" cols="50" ></textarea>
+                <br><br>
+                <input type="radio" name = "T&C" value = "Terms & Condition"><b>I read all the terms and condition </b><a href="http://127.0.0.1:5500/terms.html"><b>Terms & Condition</b></a><br><br>
+                <p><b>If you have already an account then </b><a href="http://127.0.0.1:5500/Login_page.html"><b>Login Here</b></a></p>
+                <button><b>Submit</b></button>
+                <button><b>Reset </b></button>
+            <h3><b>Thank you for visiting our Website, Ab aap Aage Teen Logo ko lekar aaye. </b></h3>
+        </form>
+    </center>
+</body>
+</html>
